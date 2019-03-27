@@ -1,9 +1,7 @@
 #include <Servo.h> 
+
 #define servo_gear_pin 3
 #define servo_up_pin 5
-
-#define ECHO 12
-#define TRIG 13
 
 Servo servo_gear; 
 Servo servo_up;
@@ -12,8 +10,6 @@ float gear_first = 100;
 float up_first = 35;
 int up_sign = 0, gear_sign = 0;
 float input_gear=100,input_up=35,b_input_gear=100,b_input_up=35;
-
-float start_time=0, loop_time=0;
 
 void setup(){
   Serial.begin(115200);
@@ -27,8 +23,6 @@ void setup(){
 }
 
 void loop(){
-  start_time = micros();
-  
   while(Serial.available()){
     input_gear = Serial.parseFloat();
     input_up = Serial.parseFloat();
@@ -38,7 +32,6 @@ void loop(){
     if(input_up>=35)up_sign=1;
     if(input_gear>0)gear_sign=1;
   }
-  
   servo_control();
 }
 
