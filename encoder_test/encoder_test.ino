@@ -1,9 +1,4 @@
 #include <PololuWheelEncoders.h>
-#include <Servo.h> 
-//pwm pin = 3, 5, 6, 9, 10, 11
-#define servo_gear_pin 3
-#define servo_up_pin 5
-
 // 1rev = 48 pulse
 #define encoderL_A 4
 #define encoderL_B 2
@@ -17,26 +12,10 @@
 #define motorR_B 10
 #define motorR 11
 
-#define ECHO 12
-#define TRIG 13
-
-#define ir1 A0
-#define ir2 A1
-#define ir3 A2
-#define ir4 A3
-#define ir5 A4
-#define ir6 A5
-
 PololuWheelEncoders enc;
-Servo servo_gear; 
-Servo servo_up;
 
-float gear_first = 100;
-float up_first = 35;
 float inputL=0, inputR=0;
 int enc_i = 1;
-int up_sign = 0, gear_sign = 0;
-float input_gear=100,input_up=35,b_input_gear=100,b_input_up=35;
 float L_C = 0, R_C = 0;
 float L_speed = 0, R_speed = 0;
 float L_output=0, R_output=0;
@@ -58,10 +37,6 @@ float enc_time = 0,start_time=0, loop_time=0, b_loop_time=0;
 void setup(){
   Serial.begin(115200);
   while(!Serial);
-  pinMode(ir1,INPUT);
-  pinMode(ir2,INPUT);
-  pinMode(ir3,INPUT);
-  pinMode(ir4,INPUT);
   enc.init(encoderR_A,encoderR_B, encoderL_A, encoderL_B);
   pinMode(motorL, OUTPUT);
   pinMode(motorR, OUTPUT);
@@ -70,11 +45,6 @@ void setup(){
   pinMode(motorR_F, OUTPUT);
   pinMode(motorR_B, OUTPUT);
   Serial.println("start");
-  servo_gear.attach(servo_gear_pin);
-  servo_up.attach(servo_up_pin);
-  servo_gear.write(gear_first);
-  servo_up.write(up_first);
-  delay(15);
   digitalWrite(motorR_F,HIGH);
   digitalWrite(motorR_B,LOW);
   analogWrite(motorR,0);
@@ -89,34 +59,17 @@ void loop(){
   start_time = micros();
   
   while(Serial.available()){
-    //inputL = Serial.parseFloat();
-    //inputR = Serial.parseFloat();
-    input_gear = Serial.parseFloat();
-    input_up = Serial.parseFloat();
+    inputL = Serial.parseFloat();
+    inputR = Serial.parseFloat();
     Serial.setTimeout(10);
-    //enc_i = 1;
-    up_sign = 0;
-    gear_sign = 0;
-    if(input_up>=35)up_sign=1;
-    if(input_gear>0)gear_sign=1;
+    enc_i = 1;
   }
   
-  servo_control();
-  /*
   enc_read_by_pulse();
   loop_time = micros() - start_time;
   L_speed = L_C*100000 / loop_time;
   R_speed = R_C*100000 / loop_time;
-  */
-  /*
-  if(micros()>3000000){
-    inputL=3;
-    inputR=3;
-  }
-  if(micros()>40000000){
-    inputL=L_speed;
-    inputR=R_speed;
-  }
+  
   delay(100);
   
   enc_read_by_time();
@@ -126,50 +79,7 @@ void loop(){
   Serial.print("L_RPS:");Serial.print(L_speed);Serial.print("  ");
   Serial.print("R_PWM:");Serial.print(R_PWM);Serial.print("  ");
   Serial.print("R_RPS:");Serial.println(R_speed);
-  motor_control();*/
-}
-void servo_control(){  
-  if(input_up<35)input_up=b_input_up;
-  if(input_up<35)input_up=35;
-  else if(input_up>80)input_up=80;
-  if(input_gear==0)input_gear=b_input_gear;
-  if(input_gear>100)input_gear=100;
-  if(up_sign==1){
-    if(b_input_up<input_up){
-      for(int i=b_input_up; i<input_up; i++){
-        servo_up.write(i);
-        delay(5);
-      }
-    }
-    else if(b_input_up>input_up){
-      for(int i=b_input_up; i>input_up; i--){
-        servo_up.write(i); 
-        delay(5);
-      }
-    }
-    up_sign=0;
-  }
-  if(gear_sign==1){
-    if(b_input_gear<input_gear){
-      for(int i=b_input_gear; i<input_gear; i++){
-        //Serial.print(i);
-        servo_gear.write(i);
-        delay(5);
-      }
-    }
-    else if(b_input_gear>input_gear){
-      for(int i=b_input_gear; i>input_gear; i--){
-        servo_gear.write(i);
-        //Serial.print(i);
-        delay(5);
-      }
-    }
-    gear_sign=0;
-  }
-  b_input_up = input_up;
-  b_input_gear = input_gear;
-  servo_up.write(input_up);
-  servo_gear.write(input_gear);
+  motor_control();
 }
 
 void motor_control(){
@@ -206,6 +116,7 @@ void motor_control(){
     R_output = 0;
   }
 }
+
 int pid_cal(float val,float enc_speed,
             float Kp,float Ki,float Kd, float & I_val, float & D_val, float & output){
   float error = val - enc_speed;
