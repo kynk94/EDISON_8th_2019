@@ -23,7 +23,7 @@ DM-CLS130TD Servo-Motor - 2 pcs
 과학상자 Gear No.106 - 2 pcs  
 KOREAN : TCRT5000 IR Sensor (Mechasolution_hangul Manufatured) - 6 pcs  
 1300mah LiPo Battery - 1 pcs  
-100mm 5pi Abrasive rod - 1 pcs
+Abrasive rod L:100mm D:5pi - 1 pcs
 
 ## 대회 개요
 <img src="https://user-images.githubusercontent.com/41245985/54879190-5a081800-4e79-11e9-8d2f-fb1c88c6d73d.png" width="90%"></img>
