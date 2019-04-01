@@ -3,7 +3,9 @@
 ## 사용한 인코더 - Encoder for Pololu Wheel 42x19mm  
 https://www.pololu.com/product/1217
 
-<img src="https://user-images.githubusercontent.com/41245985/55307148-9ba84c80-5491-11e9-93cf-2df2349afd03.png" width="60%"></img>  
+<a href="http://www.robotoid.com/appnotes/circuits-quad-encoding.html">
+ <img src="https://user-images.githubusercontent.com/41245985/55307148-9ba84c80-5491-11e9-93cf-2df2349afd03.png" width="60%" />
+</a>
 
 양쪽 바퀴의 RPM을 측정하여 PID 제어를 하기 위해 광학 인코더를 사용한다.  
 각 인코더에 있는 2개의 센서에서 Wheel에 있는 12개의 톱니 요철 변화에 따라서 Pulse가 발생하며,  
