@@ -7,8 +7,14 @@
 팀원 - 강인구, 기인호, 김은규, 서혁준  
   
 EDISON 8th(2019)  
-Computational design Competition  
+Computational design Competition
+## 3D 프린팅 모델
+<img src="https://user-images.githubusercontent.com/41245985/55308508-ee840300-5495-11e9-9725-1348480ac39c.PNG" width="90%"></img>
 
+## 완성품
+<img src="https://user-images.githubusercontent.com/41245985/55308915-16c03180-5497-11e9-9f1e-ca2fd453adea.png" width="90%"></img>
+
+## 대회 개요
 <img src="https://user-images.githubusercontent.com/41245985/54879190-5a081800-4e79-11e9-8d2f-fb1c88c6d73d.png" width="90%"></img>
 <img src="https://user-images.githubusercontent.com/41245985/54879208-9e93b380-4e79-11e9-9ff2-d1db423eab04.png" width="90%"></img>
 <img src="https://user-images.githubusercontent.com/41245985/55307927-0195d380-5494-11e9-9a7a-6d0c7aed8189.png" width="90%"></img>
