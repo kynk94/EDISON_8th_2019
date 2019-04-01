@@ -27,7 +27,6 @@ KOREAN : TCRT5000 IR Sensor (Mechasolution_hangul Manufatured) - 6 pcs
 TCS34725 Color Sensor - 1 pcs  
 HC-SR04 Ultrasonic Sensor - 1 pcs  
 1300mah LiPo Battery - 1 pcs  
-https://youtu.be/sRzWvdurW9Q
 
 ## 동작 영상 (D-1) (대회 당일 영상이 없음)
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=sRzWvdurW9Q" target="_blank">
