@@ -14,6 +14,17 @@ Computational design Competition
 ## 완성품
 <img src="https://user-images.githubusercontent.com/41245985/55308915-16c03180-5497-11e9-9f1e-ca2fd453adea.png" width="90%"></img>
 
+## 사용 부품 목록
+Arduino UNO - 1 pcs  
+Arduino UNO Protoshield - 1 pcs  
+L298N Motor Driver - 1 pcs  
+DM-CLS130TD Servo-Motor - 2 pcs  
+과학상자 100-A Geared DC-Motor - 2 pcs  
+과학상자 Gear No.106 - 2 pcs  
+KOREAN : TCRT5000 IR Sensor (Mechasolution_hangul Manufatured) - 6 pcs  
+1300mah LiPo Battery - 1 pcs  
+100mm 5pi Abrasive rod - 1 pcs
+
 ## 대회 개요
 <img src="https://user-images.githubusercontent.com/41245985/54879190-5a081800-4e79-11e9-8d2f-fb1c88c6d73d.png" width="90%"></img>
 <img src="https://user-images.githubusercontent.com/41245985/54879208-9e93b380-4e79-11e9-9ff2-d1db423eab04.png" width="90%"></img>
