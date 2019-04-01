@@ -8,6 +8,7 @@
   
 EDISON 8th(2019)  
 Computational design Competition
+
 ## 3D 프린팅 모델
 <img src="https://user-images.githubusercontent.com/41245985/55308508-ee840300-5495-11e9-9725-1348480ac39c.PNG" width="90%"></img>
 
@@ -26,6 +27,12 @@ KOREAN : TCRT5000 IR Sensor (Mechasolution_hangul Manufatured) - 6 pcs
 TCS34725 Color Sensor - 1 pcs  
 HC-SR04 Ultrasonic Sensor - 1 pcs  
 1300mah LiPo Battery - 1 pcs  
+https://youtu.be/sRzWvdurW9Q
+
+## 동작 영상 (D-1) (대회 당일 영상이 없음)
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=sRzWvdurW9Q" target="_blank">
+ <img src="https://user-images.githubusercontent.com/41245985/55313781-9653fd80-54a3-11e9-81a2-185d840c2c54.png" alt="IMAGE ALT TEXT HERE" width="90%" border="10" />
+</a>
 
 ## 대회 개요
 <img src="https://user-images.githubusercontent.com/41245985/54879190-5a081800-4e79-11e9-8d2f-fb1c88c6d73d.png" width="90%"></img>
