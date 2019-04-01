@@ -11,3 +11,8 @@ Computational design Competition
 
 <img src="https://user-images.githubusercontent.com/41245985/54879190-5a081800-4e79-11e9-8d2f-fb1c88c6d73d.png" width="90%"></img>
 <img src="https://user-images.githubusercontent.com/41245985/54879208-9e93b380-4e79-11e9-9ff2-d1db423eab04.png" width="90%"></img>
+<img src="https://user-images.githubusercontent.com/41245985/55307927-0195d380-5494-11e9-9a7a-6d0c7aed8189.png" width="90%"></img>
+<img src="https://user-images.githubusercontent.com/41245985/55307939-13777680-5494-11e9-8828-ddccfe1c186c.png" width="90%"></img>
+<img src="https://user-images.githubusercontent.com/41245985/55307950-16726700-5494-11e9-95ec-53e0895094d3.png" width="90%"></img>
+<img src="https://user-images.githubusercontent.com/41245985/55307968-2722dd00-5494-11e9-8e6a-f15768dd63b8.png" width="90%"></img>
+<img src="https://user-images.githubusercontent.com/41245985/55307970-28540a00-5494-11e9-962b-e9165240fa2a.png" width="90%"></img>
